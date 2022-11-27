@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using ConsoleApp2.Calculadora;
+
 Console.WriteLine("Hello, World!");
 
 float valorFloat= 3.4F;
@@ -33,8 +35,11 @@ Console.WriteLine(Math.Round(cotacaoBitCoin, MidpointRounding.ToEven));
 Console.WriteLine(cotacaoBitCoin.ToString("C2"));
 decimal valorReal = cotacaoBitCoin * valorBitCoin;
 Console.WriteLine("Valor em real " + valorReal);
+
 //Lendo valores Projeto calculadora
-Console.WriteLine("Digite o valor do bitcoin");
+
+var calculadora = new Class1();
+Console.WriteLine("Digite os valores:");
 string retorno = Console.ReadLine();
 int valor1 = int.Parse(retorno);
 retorno = Console.ReadLine();
