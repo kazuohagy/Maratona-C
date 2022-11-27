@@ -33,3 +33,15 @@ Console.WriteLine(Math.Round(cotacaoBitCoin, MidpointRounding.ToEven));
 Console.WriteLine(cotacaoBitCoin.ToString("C2"));
 decimal valorReal = cotacaoBitCoin * valorBitCoin;
 Console.WriteLine("Valor em real " + valorReal);
+//Lendo valores Projeto calculadora
+Console.WriteLine("Digite o valor do bitcoin");
+string retorno = Console.ReadLine();
+int valor1 = int.Parse(retorno);
+retorno = Console.ReadLine();
+int valor2 = int.Parse(retorno);
+int resultado = valor1 + valor2;
+Console.WriteLine("Vc digitou " + valor1);
+Console.WriteLine("Vc digitou " + valor2);
+Console.WriteLine("O resultado é " + resultado);
+//Esse aqui e para sair do programa
+Console.ReadKey();
