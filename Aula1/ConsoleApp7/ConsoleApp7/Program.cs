@@ -14,6 +14,10 @@ for (int a = 0; a < notas.Count; a++)
 {
     Console.WriteLine(notas[a]);
 }
+Console.WriteLine("Ouuuu FOREACH AQUI EM BAIXO");
+foreach(int a in notas)
+{ Console.WriteLine(a); }
+
 Console.WriteLine("Soma dos arrays: "+ notas.Sum());
 
 Console.WriteLine("///////////////Teste Do While");
