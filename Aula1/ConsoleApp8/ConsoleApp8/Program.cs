@@ -26,3 +26,12 @@ Console.WriteLine("COR: " +
 
 var casaNew = new Casa(123, "Amarelo", 1, 3);
 Console.WriteLine(casaNew.QuantidadeDePortas);
+
+MoradorCasa.idade = 20;
+MoradorCasa.nome = "Jhow";
+
+Console.WriteLine("O nome e " +
+    MoradorCasa.nome + " Idade: " + MoradorCasa.nome);
+
+var casaOld1 = new Casa(123);
+Console.WriteLine(casaOld1.Cor);

@@ -10,15 +10,22 @@ namespace ConsoleApp8
     {
         public Casa() { }
         public Casa(int tamanho, string cor) {
-            Tamanho= tamanho;
-            Cor= cor;
-        }  
-        public Casa(int tamanho, string cor,int qtdPortas, int qtdJanelas) {
-            Tamanho= tamanho;
-            Cor= cor;
-            QuantidadeDePortas= qtdPortas;
-            QuantidadeDeJanelas= qtdJanelas;
+            Tamanho = tamanho;
+            Cor = cor;
         }
+        public Casa(int tamanho, string cor, int qtdPortas, int qtdJanelas) {
+            Tamanho = tamanho;
+            Cor = cor;
+            QuantidadeDePortas = qtdPortas;
+            QuantidadeDeJanelas = qtdJanelas;
+        }  
+        public Casa(int qtdPortas,int tamanho=100, string cor="Beyzanur") {
+            Tamanho = tamanho;
+            Cor = cor;
+            QuantidadeDePortas = qtdPortas;
+            
+        }
+
         public int Tamanho { get; set; }
         public string Cor { get; set; }
 
@@ -29,5 +36,6 @@ namespace ConsoleApp8
         {
             Console.WriteLine("A casa foi alugada :D");
         }
+        public static int QuantidadeMoradores {get; set;}
     }
 }
