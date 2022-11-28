@@ -64,7 +64,7 @@ foreach (var fruta in frutas){
 }
 
 int[] numerosSorteados = new int[5] {1,2,28,21,10};
-
+int numeroMaior = 0;
 foreach (var numero in numerosSorteados)
 {
     int numAnterior = numero;
@@ -73,3 +73,12 @@ foreach (var numero in numerosSorteados)
     Console.WriteLine(numero);
     
 }
+for (int i = 0; i< numerosSorteados.Length; i++)
+{
+    if (numerosSorteados[i] > numeroMaior)
+    {
+        numeroMaior = numerosSorteados[i];
+    }
+}
+Console.WriteLine("O maior numero e: " + numeroMaior);
+Console.WriteLine("ACABOU :D ");
