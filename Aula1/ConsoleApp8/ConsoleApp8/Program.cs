@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp8;
+using System.Security.AccessControl;
 
 Console.WriteLine("CASA INSTANCIADA OBJETO!");
 var casa = new Casa();
@@ -38,3 +39,12 @@ Console.WriteLine(casaOld1.Cor);
 
 var casa3 = new Casa();
 casa3.numberTelhas1= 1;
+
+var addres = new Endereco();
+
+addres.Rua = "Sao Joao";
+addres.Bairro = "Bairro Velho";
+addres.Numero = "231";
+addres.Cep = "123123-000";
+addres.TipoRua = TipoRuaEnum.EstradaDeBarro;
+Console.WriteLine(addres.TipoRua.ToString());
