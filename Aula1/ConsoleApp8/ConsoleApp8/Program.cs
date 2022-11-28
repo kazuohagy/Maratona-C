@@ -17,3 +17,12 @@ casa2.QuantidadeDePortas = 2;
 
 Console.WriteLine("A cor da casa e " + casa2.Cor);
 Console.WriteLine("A quantidade de portas e " + casa2.QuantidadeDePortas);
+
+casa2.VenderCasa();
+
+var casaOld = new Casa(123,"Amarelo");
+Console.WriteLine("COR: " +
+    casaOld.Cor +" TAMANHO:" + casaOld.Tamanho);
+
+var casaNew = new Casa(123, "Amarelo", 1, 3);
+Console.WriteLine(casaNew.QuantidadeDePortas);
