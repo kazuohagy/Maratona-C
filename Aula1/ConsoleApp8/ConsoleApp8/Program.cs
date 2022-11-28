@@ -48,3 +48,28 @@ addres.Numero = "231";
 addres.Cep = "123123-000";
 addres.TipoRua = TipoRuaEnum.EstradaDeBarro;
 Console.WriteLine(addres.TipoRua.ToString());
+
+//Arrays aula
+Console.WriteLine("/////////////////ARRAY////////////////");
+string[] frutas = new string[5] {"Maca" ,
+    "banana" ,
+    "melancia" ,
+    "pera" ,
+    "banana"
+    };
+
+foreach (var fruta in frutas){
+    Console.WriteLine("Esse e a fruta: " + fruta);
+
+}
+
+int[] numerosSorteados = new int[5] {1,2,28,21,10};
+
+foreach (var numero in numerosSorteados)
+{
+    int numAnterior = numero;
+
+    if (numero > numAnterior) { Console.WriteLine(numero); }
+    Console.WriteLine(numero);
+    
+}
