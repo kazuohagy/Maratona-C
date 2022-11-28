@@ -35,3 +35,6 @@ Console.WriteLine("O nome e " +
 
 var casaOld1 = new Casa(123);
 Console.WriteLine(casaOld1.Cor);
+
+var casa3 = new Casa();
+casa3.numberTelhas1= 1;

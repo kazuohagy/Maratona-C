@@ -25,7 +25,10 @@ namespace ConsoleApp8
             QuantidadeDePortas = qtdPortas;
             
         }
-
+        public int numberTelhas { get; } = 200;
+        public int numberTelhas1 { private get; set; }
+        //readonly so aceita alteracao dentro da propria 
+        public readonly int numberTelhas2;
         public int Tamanho { get; set; }
         public string Cor { get; set; }
 
