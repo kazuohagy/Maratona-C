@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp8;
+using System.Collections;
 using System.Security.AccessControl;
 
 Console.WriteLine("CASA INSTANCIADA OBJETO!");
@@ -82,3 +83,37 @@ for (int i = 0; i< numerosSorteados.Length; i++)
 }
 Console.WriteLine("O maior numero e: " + numeroMaior);
 Console.WriteLine("ACABOU :D ");
+var casas = new List<Casa>();
+var casas1 = new Casa
+{
+    QuantidadeDeJanelas = 1,
+    QuantidadeDePortas = 1,
+};
+casas.Add(casas1);
+
+var casas3 = new List<Casa>()
+{
+new Casa(100,"Vermelha"),
+new Casa(100,"Vermelha"),
+new Casa(100,"Vermelha"),
+new Casa(100,"Vermelha"),
+new Casa(100,"Vermelha"),
+new Casa(100,"Vermelha"),
+};
+foreach (var casas2 in casas)
+{
+    Console.WriteLine(casas2.QuantidadeDeJanelas);
+}
+foreach (var casa5 in casas3)
+{
+    casa5.VenderCasa();
+}
+
+ArrayList myAl = new ArrayList();
+myAl.Add("Hello");
+myAl.Add("World");
+myAl.Add("!");
+Console.WriteLine(myAl.Count);
+Console.WriteLine(myAl.Capacity);
+foreach (object obj in myAl)
+    Console.Write(obj);
